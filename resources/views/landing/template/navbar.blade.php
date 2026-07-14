@@ -8,8 +8,8 @@
             <ul class="nav-menu">
                 <li><a href="#hero">Beranda</a></li>
                 <li><a href="#layanan">Tentang</a></li>
-                <li><a href="">Buat Aduan</a></li>
-                <li><a href="">Cek Status</a></li>
+                <li><a href="#form-ngadu">Buat Aduan</a></li>
+                <li><a href="#status">Cek Status</a></li>
             </ul>
 
             @guest

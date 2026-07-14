@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
         <img src="https://i.pinimg.com/736x/ff/56/a7/ff56a7ce00252cdae9e47d0cd31c0ca9.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Web Jayla</span>
+        <span class="brand-text font-weight-light">Web nayyy</span>
     </a>
 
     <!-- Sidebar -->

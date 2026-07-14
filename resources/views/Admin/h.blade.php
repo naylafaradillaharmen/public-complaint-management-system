@@ -1,6 +1,6 @@
 @extends('template.base')
 
-@section('jayla')
+@section('nayyy')
 
 <!DOCTYPE html>
 <html lang="en">

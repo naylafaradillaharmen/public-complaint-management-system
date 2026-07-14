@@ -44,7 +44,7 @@
                   <input
                     type="email"
                     name="email"
-                    placeholder="jayla@gmail.com"
+                    placeholder="nayyy@gmail.com"
                     required />
                 </div>
               </div>

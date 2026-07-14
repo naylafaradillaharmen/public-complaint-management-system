@@ -19,8 +19,8 @@
         <div class="hero-image">
           <div class="image">
             <img
-              src="https://i.pinimg.com/736x/6a/71/91/6a7191a8dbb042e109c6c46d3d522a30.jpg"
-              alt="" />
+              src="{{ asset('landing/images/hero-cat.jpg') }}"
+              alt="Cat typing on laptop I'm Ok" />
           </div>
         </div>
       </div>
