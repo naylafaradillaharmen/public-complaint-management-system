@@ -1,61 +1,185 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Public Complaint Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> A web-based platform developed to simplify the process of submitting, managing, and responding to public complaints through a centralized administrative system.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The Public Complaint Management System is a web application built with Laravel to facilitate communication between citizens and administrators. The platform enables users to submit complaints online while allowing administrators to review, verify, and respond to reports through an organized dashboard.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The application aims to improve transparency, streamline complaint handling, and reduce manual administrative processes by providing a centralized digital reporting system.
 
-## Learning Laravel
+Developed as an academic project, this application demonstrates full-stack web development using Laravel and MySQL.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Features
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Public Services
 
-## Laravel Sponsors
+* User Registration & Login
+* Submit Public Complaints
+* Complaint History
+* Complaint Status Tracking
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Administration
 
-### Premium Partners
+* Administrative Dashboard
+* Complaint Verification
+* Complaint Management
+* Response Management
+* User Management
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Reporting
 
-## Contributing
+* Complaint Statistics
+* Dashboard Analytics
+* Complaint Categorization
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## Tech Stack
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Backend
 
-## Security Vulnerabilities
+* Laravel
+* PHP
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Frontend
 
-## License
+* Blade Template
+* HTML5
+* CSS3
+* JavaScript
+* Bootstrap
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Database
+
+* MySQL
+
+### Libraries
+
+* SweetAlert2
+* Toastr
+* Summernote
+
+---
+
+## System Architecture
+
+```text
+Citizens
+     │
+     ▼
+Public Complaint Website
+     │
+Laravel MVC Architecture
+     │
+Business Logic
+     │
+MySQL Database
+     │
+Administrative Dashboard
+```
+
+---
+
+## My Responsibilities
+
+This project was developed independently, covering both backend and frontend development.
+
+My responsibilities included:
+
+* Designing the relational database structure.
+* Developing the complaint submission workflow.
+* Building the administrative dashboard.
+* Implementing authentication and role-based authorization.
+* Developing complaint verification and response features.
+* Managing complaint categories and user data.
+* Connecting frontend interfaces with backend functionality.
+* Testing and refining the application to improve usability and reliability.
+
+---
+
+## Challenges
+
+One of the main challenges in developing this application was designing a workflow that could efficiently accommodate both citizens and administrators while maintaining a simple and intuitive user experience.
+
+Another challenge involved implementing role-based access control, organizing complaint data, and ensuring that complaint statuses and responses remained synchronized throughout the application.
+
+Developing this project strengthened my understanding of Laravel MVC architecture, authentication, relational database design, and full-stack web application development.
+
+---
+
+## Running the Project
+
+### Prerequisites
+
+* PHP 8.2 or later
+* Composer
+* Node.js
+* MySQL
+
+### Setup
+
+Install project dependencies.
+
+```bash
+composer install
+npm install
+```
+
+Copy the environment configuration.
+
+```bash
+cp .env.example .env
+```
+
+Configure the database inside the `.env` file.
+
+Generate the application key.
+
+```bash
+php artisan key:generate
+```
+
+Run the database migrations.
+
+```bash
+php artisan migrate
+```
+
+Compile frontend assets.
+
+```bash
+npm run dev
+```
+
+Start the development server.
+
+```bash
+php artisan serve
+```
+
+---
+
+## Future Improvements
+
+Potential future enhancements include:
+
+* Email notifications.
+* File attachment support.
+* Complaint location mapping.
+* Complaint priority management.
+* Real-time notifications.
+* Mobile-responsive optimization.
+* Data export and reporting.
+
+---
+
+## Project Status
+
+Academic Project
+
+Developed as a web-based complaint management platform to demonstrate Laravel development, authentication, role-based authorization, dashboard implementation, and relational database management.
